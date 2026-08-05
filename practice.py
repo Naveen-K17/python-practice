@@ -86,12 +86,41 @@
 # reverse=string[::-1]
 # print(reverse)
 
+# n=12345
+
+# reverse=0
+
+# while n>0:
+#     digit=n%10
+#     reverse=reverse*10+digit
+#     n=n//10
+# print(reverse)
+# def binarysearch(arr,target):
+#     low=0
+#     high=len(arr)-1
+    
+#     while low<=high:
+#         mid=(low + high)//2
+#         if arr[mid]==target:
+#             return mid
+#         elif arr[mid]<target:
+#             low=mid+1
+#         else:
+#             high=mid-1
+            
+#     return -1
+# number=[10,20,30,40]
+# target=40
+# result=binarysearch(number,target)
+# if result!=-1:
+#     print(f"target found at {result}")
+# else:
+#     print("Not found")
 n=12345
 
-reverse=0
-
+count=0
 while n>0:
-    digit=n%10
-    reverse=reverse*10+digit
+    count+=1
     n=n//10
-print(reverse)
+    
+print(count)
